@@ -1,0 +1,351 @@
+/* start css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333; 
+}
+
+
+/*bar*/
+.navbar {
+    width: 100%;
+    padding: 10px 50px; 
+    background-color: rgba(14, 39, 74, 0.9); 
+    display: flex;
+    justify-content:space-between; 
+    align-items:center;
+
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 60px; 
+    vertical-align: middle;
+}
+
+.nav-links {
+    flex-grow: 1; 
+    text-align:left; 
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 15px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active-link { 
+    color: #ff9800; 
+}
+
+/* login*/
+.login-btn {
+    padding: 8px 15px;
+    background-color: #ff9800; 
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.login-btn:hover {
+    background-color: #e07b00;
+}
+.about-hero {
+    
+    background-image: url('gghhyj.png'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px; 
+}
+
+.hero-overlay {
+    background-color: rgba(14, 39, 74, 0.6); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 10%;
+}
+
+.hero-content-wrapper {
+    max-width: 800px;
+    color: white;
+}
+
+.main-title {
+    font-size: 3.5rem; 
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: #fffefc; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.subtitle {
+    font-size: 1.1rem; 
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+
+.details-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff9800; 
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px; 
+    transition: background-color 0.3s, transform 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.details-btn:hover {
+    background-color: #e07b00;
+    transform: translateY(-3px); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.vision-section {
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background-color: #f7f9fc;
+    gap: 50px;
+}
+
+.vision-text-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.vision-image-placeholder {
+    flex: 1;
+    min-height: 300px;
+    background-color: #e0e7ee;
+    border-radius: 10px;
+    background-image: url('about.jpeg');
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.section-heading {
+    font-size: 2rem; 
+    font-weight: 700;
+    color: #0e274a;
+    margin-bottom: 25px;
+    border-left: 5px solid #ff9800; 
+    padding-left: 15px;
+}
+
+.vision-text-content p {
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+
+.why-explore-section {
+    padding: 80px 10%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.why-explore-section .section-heading {
+    border: none;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.points-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.point-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.point-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.icon-style {
+    font-size: 3rem;
+    color: #ff9800;
+    margin-bottom: 15px;
+}
+
+.point-card h3 {
+    font-size: 1.3rem;
+    color: #0e274a;
+    margin-bottom: 10px;
+}
+
+.point-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+
+.creator-section {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #0e274a; 
+    color: white;
+}
+
+.creator-section .section-heading {
+    color: #ffe082;
+    border: none;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.creator-profile-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    display: inline-block;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff9800;
+    margin-bottom: 15px;
+}
+
+.creator-profile-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.creator-title {
+    color: #ff9800;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #ffe082;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff9800;
+}
+
+
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 5%;
+}
+
+footer p:last-child {
+    font-style: italic;
+    margin-top: 10px;
+    color: #FFC300;
+}
+
+
+@media (max-width: 1024px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+    .vision-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .vision-text-content {
+        max-width: 100%;
+    }
+    .vision-text-content p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .nav-links {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .nav-links a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+    .login-btn {
+        margin-top: 10px;
+    }
+
+    .about-hero {
+        min-height: 100vh;
+    }
+    .hero-overlay {
+        padding: 100px 5% 50px 5%;
+    }
+    .main-title {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+    .section-heading {
+        font-size: 1.5rem;
+        padding-left: 10px;
+    }
+    .vision-section, .why-explore-section, .creator-section {
+        padding: 50px 5%;
+    }
+}
