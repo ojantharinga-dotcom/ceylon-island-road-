@@ -1,0 +1,142 @@
+/*  Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333;
+}
+
+/*bar*/
+.navbar {
+    width: 100%;
+    padding: 10px 50px; 
+    background-color: rgba(14, 39, 74, 0.9); 
+    display: flex;
+    justify-content:space-between; 
+    align-items:center;
+}
+
+.logo img {
+    height: 60px; 
+    vertical-align: middle;
+}
+
+.nav-links {
+    flex-grow: 1; 
+    text-align:left; 
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 15px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9800; 
+}
+
+/* log */
+.login-btn {
+    padding: 8px 15px;
+    background-color: #ff9800; 
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.login-btn:hover {
+    background-color: #e07b00;
+}
+
+
+
+
+.kandy-section {
+    position: relative;
+    width: 100%;
+    height: 80vh; 
+    overflow: hidden; 
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.section-title-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; 
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.section-title-overlay h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.section-title-overlay p {
+    font-size: 1.5em;
+}
+
+
+
+.slide-images {
+    width: 500%;
+    height: 100%;
+    display: flex; 
+    position: relative;
+  
+    animation: slide-show 10s infinite; 
+}
+
+.slide-images img {
+    width: 20%; 
+    height: 100%;
+    object-fit: cover; 
+    filter: brightness(0.7); 
+}
+
+@keyframes slide-show {
+    0% { left: 0; } 
+    16% { left: 0; } 
+    20% { left: -100%; } 
+    36% { left: -100%; } 
+    40% { left: -200%; } 
+    56% { left: -200%; } 
+    60% { left: -300%; } 
+    76% { left: -300%; } 
+    80% { left: -400%; } 
+    96% { left: -400%; } 
+    100% { left: 0; }
+}
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 5%;
+}
+
+footer p:last-child {
+    font-style: italic;
+    margin-top: 10px;
+    color: #FFC300;
+}

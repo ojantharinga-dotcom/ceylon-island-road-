@@ -1,0 +1,240 @@
+/* Ccu font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333; 
+}
+
+
+.hero-section {
+    background-image: linear-gradient(rgba(14, 39, 74, 0.4), rgba(14, 39, 74, 0.2)), url('dddd.jpg'); 
+    background-size:cover;
+    background-position:0cqmax;
+    height: 160vh; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #fff; 
+}
+
+/*bar */
+.navbar {
+    width: 100%;
+    padding: 10px 50px; 
+    background-color: rgba(14, 39, 74, 0.9); 
+    display: flex;
+    justify-content:space-between; 
+    align-items:center;
+}
+
+.logo img {
+    height: 60px; 
+    vertical-align: middle;
+}
+
+.nav-links {
+    flex-grow: 1; 
+    text-align:left; 
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 15px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9800; 
+}
+
+/*login */
+.login-btn {
+    padding: 8px 15px;
+    background-color: #ff9800; 
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.login-btn:hover {
+    background-color: #e07b00;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+
+.header {
+    background-color: #1a293f; 
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 35px; 
+    margin-right: 10px;
+}
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.login-btn {
+    background-color: #ff8c00; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.journey-planner {
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.journey-planner h1 {
+    font-size: 36px;
+    color: #04075b;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 18px;
+    color: #690e0e;
+    margin-bottom: 40px;
+}
+
+.stop {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 35px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-left: 8px solid;
+}
+
+.stop-galle { border-left-color: #ff9800; } 
+.stop-mirissa { border-left-color: #2196f3; } 
+.stop-tangalle { border-left-color: #4caf50; } 
+
+.stop h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #004d40; 
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Place Cards Grid */
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.place-card {
+    color: #2f2226;
+}
+.place-card {
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 15px;
+}
+.place-card h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+.time {
+    font-weight: bold;
+    color: #e91e63;
+    display: block;
+    margin-top: 5px;
+}
+
+
+.travel-time {
+    background-color: #e0f2f1;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #004d40;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+    .nav-links {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links a {
+        margin: 0 10px;
+    }
+    .login-btn {
+        margin-top: 10px;
+        width: calc(100% - 40px);
+    }
+    .places-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* --- Footer --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 5%;
+}
+
+footer p:last-child {
+    font-style: italic;
+    margin-top: 10px;
+    color: #FFC300;
+}
